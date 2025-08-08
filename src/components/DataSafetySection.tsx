@@ -54,7 +54,7 @@ const DataSafetySection = () => {
           <div className="inline-flex items-center gap-3 bg-white/90 backdrop-blur-sm rounded-full px-8 py-4 border border-primary/20 shadow-card">
             <Shield className="w-6 h-6 text-primary" />
             <span className="text-lg font-medium text-foreground">
-              HIPAA Compliant & SOC 2 Certified
+              HIPAA Compliant
             </span>
           </div>
         </div>

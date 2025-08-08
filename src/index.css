@@ -15,20 +15,20 @@
     --popover: 0 0% 100%;
     --popover-foreground: 215 25% 15%;
 
-    /* Healthcare primary - Medical blue */
-    --primary: 207 89% 42%;
+    /* Foster Health AI primary */
+    --primary: 193 57% 38%;
     --primary-foreground: 0 0% 100%;
-    --primary-light: 207 89% 85%;
+    --primary-light: 193 57% 85%;
     
-    /* Healthcare secondary - Medical teal */
-    --secondary: 174 72% 56%;
-    --secondary-foreground: 0 0% 100%;
+    /* Foster Health AI secondary - Warm gold */
+    --secondary: 44 95% 57%;
+    --secondary-foreground: 215 25% 15%;
     
-    /* Healthcare accent - Trust green */
-    --accent: 152 69% 49%;
-    --accent-foreground: 0 0% 100%;
+    /* Foster Health AI accent - Warm cream */
+    --accent: 44 100% 95%;
+    --accent-foreground: 215 25% 15%;
 
-    --muted: 220 13% 96%;
+    --muted: 36 33% 91%;
     --muted-foreground: 215 16% 47%;
 
     --destructive: 0 84% 60%;
@@ -36,17 +36,17 @@
 
     --border: 220 13% 91%;
     --input: 220 13% 91%;
-    --ring: 207 89% 42%;
+    --ring: 193 57% 38%;
 
-    /* Healthcare gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(207 89% 42%), hsl(174 72% 56%));
-    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(220 13% 98%));
-    --gradient-accent: linear-gradient(135deg, hsl(152 69% 49%), hsl(174 72% 56%));
+    /* Foster Health AI gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(193 57% 38%), hsl(44 95% 57%));
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(44 100% 96%));
+    --gradient-accent: linear-gradient(135deg, hsl(193 57% 38%), hsl(44 95% 57%));
 
-    /* Healthcare shadows */
-    --shadow-card: 0 4px 20px hsl(207 89% 42% / 0.08);
-    --shadow-hover: 0 8px 30px hsl(207 89% 42% / 0.15);
-    --shadow-glow: 0 0 40px hsl(207 89% 42% / 0.2);
+    /* Foster Health AI shadows */
+    --shadow-card: 0 4px 20px hsl(193 57% 38% / 0.08);
+    --shadow-hover: 0 8px 30px hsl(193 57% 38% / 0.15);
+    --shadow-glow: 0 0 40px hsl(193 57% 38% / 0.2);
 
     /* Healthcare animations */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -81,18 +81,18 @@
     --popover: 215 28% 10%;
     --popover-foreground: 210 40% 98%;
 
-    /* Healthcare primary in dark mode */
-    --primary: 207 89% 54%;
+    /* Foster Health AI primary in dark mode */
+    --primary: 193 57% 48%;
     --primary-foreground: 215 28% 8%;
-    --primary-light: 207 89% 75%;
+    --primary-light: 193 57% 75%;
     
-    /* Healthcare secondary in dark mode */
-    --secondary: 174 72% 46%;
-    --secondary-foreground: 210 40% 98%;
+    /* Foster Health AI secondary in dark mode */
+    --secondary: 44 95% 67%;
+    --secondary-foreground: 215 28% 8%;
     
-    /* Healthcare accent in dark mode */
-    --accent: 152 69% 39%;
-    --accent-foreground: 210 40% 98%;
+    /* Foster Health AI accent in dark mode */
+    --accent: 44 100% 85%;
+    --accent-foreground: 215 28% 8%;
 
     --muted: 215 28% 15%;
     --muted-foreground: 215 20.2% 65.1%;
@@ -102,7 +102,7 @@
 
     --border: 215 28% 18%;
     --input: 215 28% 18%;
-    --ring: 207 89% 54%;
+    --ring: 193 57% 48%;
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;

@@ -4,14 +4,13 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Mail, Phone, MessageSquare, Send } from "lucide-react";
+import { Mail, MessageSquare, Send, Calendar } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    phone: "",
     details: "",
   });
   const { toast } = useToast();
@@ -23,7 +22,7 @@ const ContactSection = () => {
       title: "Message Sent!",
       description: "We'll get back to you within 24 hours.",
     });
-    setFormData({ name: "", email: "", phone: "", details: "" });
+    setFormData({ name: "", email: "", details: "" });
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -90,20 +89,6 @@ const ContactSection = () => {
                   />
                 </div>
                 
-                <div className="space-y-2">
-                  <Label htmlFor="phone" className="text-sm font-medium text-foreground">
-                    Phone Number
-                  </Label>
-                  <Input
-                    id="phone"
-                    name="phone"
-                    type="tel"
-                    value={formData.phone}
-                    onChange={handleChange}
-                    className="border-border/50 focus:border-primary/50 focus:ring-primary/20"
-                    placeholder="+1 (555) 123-4567"
-                  />
-                </div>
                 
                 <div className="space-y-2">
                   <Label htmlFor="details" className="text-sm font-medium text-foreground">
@@ -121,14 +106,26 @@ const ContactSection = () => {
                   />
                 </div>
                 
-                <Button 
-                  type="submit"
-                  className="w-full bg-gradient-hero hover:shadow-hover transition-all duration-300 flex items-center gap-3"
-                  size="lg"
-                >
-                  <Send className="w-5 h-5" />
-                  Send Message
-                </Button>
+                <div className="grid grid-cols-2 gap-4">
+                  <Button 
+                    type="submit"
+                    className="bg-gradient-hero hover:shadow-hover transition-all duration-300 flex items-center gap-3"
+                    size="lg"
+                  >
+                    <Send className="w-5 h-5" />
+                    Send Message
+                  </Button>
+                  <Button
+                    type="button"
+                    variant="outline"
+                    className="border-primary/30 text-primary hover:bg-primary/5 transition-all duration-300 flex items-center gap-3"
+                    size="lg"
+                    onClick={() => window.open('https://calendly.com/fosterhealthai', '_blank')}
+                  >
+                    <Calendar className="w-5 h-5" />
+                    Schedule Call
+                  </Button>
+                </div>
               </form>
             </CardContent>
           </Card>
@@ -145,7 +142,7 @@ const ContactSection = () => {
                   </li>
                   <li className="flex items-start gap-3">
                     <div className="w-2 h-2 rounded-full bg-white mt-2 flex-shrink-0"></div>
-                    <span>HIPAA compliant and SOC 2 certified security</span>
+                    <span>HIPAA compliant security</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <div className="w-2 h-2 rounded-full bg-white mt-2 flex-shrink-0"></div>
@@ -167,22 +164,11 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-foreground">Email Us</h4>
-                    <p className="text-muted-foreground">hello@foster.ai</p>
+                    <p className="text-muted-foreground">hello@fosterhealthai.com</p>
                   </div>
                 </CardContent>
               </Card>
               
-              <Card className="bg-white/90 backdrop-blur-sm border-primary/10">
-                <CardContent className="p-6 flex items-center gap-4">
-                  <div className="w-12 h-12 rounded-lg bg-gradient-hero flex items-center justify-center">
-                    <Phone className="w-6 h-6 text-white" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-foreground">Call Us</h4>
-                    <p className="text-muted-foreground">+1 (555) FOSTER-AI</p>
-                  </div>
-                </CardContent>
-              </Card>
             </div>
           </div>
         </div>

@@ -8,21 +8,24 @@ const events = [
     subtitle: "AI-Powered Clinical Documentation: Getting Started",
     date: "March 15, 2024",
     time: "2:00 PM EST",
-    attendees: "250+ registered",
+    attendees: "250+ attended",
+    isPast: true,
   },
   {
     title: "Webinar #2", 
     subtitle: "Streamlining Healthcare Workflows with AI Agents",
     date: "March 22, 2024",
     time: "3:00 PM EST",
-    attendees: "180+ registered",
+    attendees: "180+ attended",
+    isPast: true,
   },
   {
     title: "Webinar #3",
     subtitle: "Data Security & Compliance in Healthcare AI",
     date: "March 29, 2024", 
     time: "1:00 PM EST",
-    attendees: "320+ registered",
+    attendees: "320+ attended",
+    isPast: true,
   },
 ];
 
@@ -77,9 +80,11 @@ const EventsSection = () => {
                 </div>
                 
                 <Button 
-                  className="w-full mt-4 bg-gradient-hero hover:shadow-hover transition-all duration-300"
+                  variant="outline"
+                  className="w-full mt-4 border-primary/30 text-primary hover:bg-primary/5 transition-all duration-300"
+                  disabled
                 >
-                  Register Now
+                  Past Event
                 </Button>
               </CardContent>
             </Card>
