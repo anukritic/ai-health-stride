@@ -25,7 +25,7 @@ const Navigation = () => {
             <img 
               src={fosterLogo} 
               alt="Foster Health AI" 
-              className="h-10 w-auto"
+              className="h-10 w-auto bg-white rounded"
             />
           </div>
 
