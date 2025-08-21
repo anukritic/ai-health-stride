@@ -1,4 +1,4 @@
-import { Stethoscope, Mail, Phone, MapPin } from "lucide-react";
+import fosterLogo from "@/assets/foster-logo.png";
 
 const Footer = () => {
   return (
@@ -8,13 +8,11 @@ const Footer = () => {
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-lg bg-gradient-hero flex items-center justify-center">
-                <Stethoscope className="w-6 h-6 text-white" />
-              </div>
-              <div>
-                <span className="text-2xl font-bold">Foster</span>
-                <span className="text-2xl font-light text-secondary">AI</span>
-              </div>
+              <img 
+                src={fosterLogo} 
+                alt="Foster Health AI" 
+                className="h-10 w-auto brightness-0 invert"
+              />
             </div>
             <p className="text-white/80 leading-relaxed">
               Transforming healthcare through intelligent AI solutions that improve productivity and patient experiences.
@@ -43,23 +41,15 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Contact */}
+          {/* Resources */}
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold">Contact</h3>
-            <div className="space-y-3 text-white/80">
-              <div className="flex items-center gap-3">
-                <Mail className="w-5 h-5" />
-                <span>hello@foster.ai</span>
-              </div>
-              <div className="flex items-center gap-3">
-                <Phone className="w-5 h-5" />
-                <span>+1 (555) FOSTER-AI</span>
-              </div>
-              <div className="flex items-center gap-3">
-                <MapPin className="w-5 h-5" />
-                <span>San Francisco, CA</span>
-              </div>
-            </div>
+            <h3 className="text-lg font-semibold">Resources</h3>
+            <ul className="space-y-2 text-white/80">
+              <li>Documentation</li>
+              <li>Blog</li>
+              <li>Case Studies</li>
+              <li>Support</li>
+            </ul>
           </div>
         </div>
 
@@ -69,7 +59,6 @@ const Footer = () => {
           </p>
           <div className="flex items-center gap-6 mt-4 md:mt-0">
             <span className="text-white/60">HIPAA Compliant</span>
-            <span className="text-white/60">SOC 2 Certified</span>
           </div>
         </div>
       </div>

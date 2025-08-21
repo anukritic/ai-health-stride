@@ -50,10 +50,10 @@ const UseCasesSection = () => {
               rel="noopener noreferrer"
               className="block group"
             >
-              <Card className="group hover:shadow-hover transition-all duration-300 transform hover:-translate-y-2 bg-gradient-card border-border/50 hover:border-primary/20 cursor-pointer">
+              <Card className="group hover:shadow-hover transition-all duration-300 transform hover:-translate-y-2 bg-card border-border/50 hover:border-primary/20 cursor-pointer">
                 <CardHeader className="pb-4">
-                  <div className="w-16 h-16 rounded-xl bg-gradient-hero flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
-                    <useCase.icon className="w-8 h-8 text-white" />
+                  <div className="w-16 h-16 rounded-xl border-2 border-primary bg-white flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                    <useCase.icon className="w-8 h-8 text-primary" />
                   </div>
                   <CardTitle className="text-xl font-semibold text-foreground leading-tight">
                     {useCase.title}

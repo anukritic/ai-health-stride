@@ -23,7 +23,7 @@ const DataSafetySection = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
             Your Data is{" "}
-            <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+            <span className="text-primary">
               Completely Secure
             </span>
           </h2>
@@ -39,8 +39,8 @@ const DataSafetySection = () => {
               className="text-center p-8 bg-white/80 backdrop-blur-sm border-primary/10 hover:border-primary/30 transition-all duration-300 hover:shadow-hover group"
             >
               <CardContent className="pt-6">
-                <div className="w-20 h-20 rounded-full bg-gradient-hero flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
-                  <feature.icon className="w-10 h-10 text-white" />
+                <div className="w-20 h-20 rounded-full border-2 border-primary bg-white flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                  <feature.icon className="w-10 h-10 text-primary" />
                 </div>
                 <h3 className="text-lg font-semibold text-foreground leading-tight">
                   {feature.title}

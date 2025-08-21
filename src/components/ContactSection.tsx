@@ -4,7 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Mail, MessageSquare, Send, Calendar } from "lucide-react";
+import { MessageSquare, Send, Calendar } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
 const ContactSection = () => {
@@ -38,7 +38,7 @@ const ContactSection = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
             Get in Touch for{" "}
-            <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+            <span className="text-primary">
               Your Project
             </span>
           </h2>
@@ -47,12 +47,14 @@ const ContactSection = () => {
           </p>
         </div>
         
-        <div className="grid lg:grid-cols-2 gap-12 items-start">
+        <div className="max-w-2xl mx-auto">
           {/* Contact Form */}
           <Card className="bg-white/90 backdrop-blur-sm border-primary/10 shadow-card">
             <CardHeader>
               <CardTitle className="text-2xl font-bold text-foreground flex items-center gap-3">
-                <MessageSquare className="w-7 h-7 text-primary" />
+                <div className="w-7 h-7 border-2 border-primary rounded bg-white flex items-center justify-center">
+                  <MessageSquare className="w-4 h-4 text-primary" />
+                </div>
                 Tell Us About Your Project
               </CardTitle>
             </CardHeader>
@@ -109,68 +111,30 @@ const ContactSection = () => {
                 <div className="grid grid-cols-2 gap-4">
                   <Button 
                     type="submit"
-                    className="bg-gradient-hero hover:shadow-hover transition-all duration-300 flex items-center gap-3"
+                    className="bg-primary text-primary-foreground hover:bg-primary/90 flex items-center gap-3"
                     size="lg"
                   >
-                    <Send className="w-5 h-5" />
+                    <div className="w-5 h-5 border border-white rounded bg-primary flex items-center justify-center">
+                      <Send className="w-3 h-3 text-white" />
+                    </div>
                     Send Message
                   </Button>
                   <Button
                     type="button"
                     variant="outline"
-                    className="border-primary/30 text-primary hover:bg-primary/5 transition-all duration-300 flex items-center gap-3"
+                    className="border-primary text-primary hover:bg-primary/5 transition-all duration-300 flex items-center gap-3"
                     size="lg"
                     onClick={() => window.open('https://calendly.com/fosterhealthai', '_blank')}
                   >
-                    <Calendar className="w-5 h-5" />
+                    <div className="w-5 h-5 border border-primary rounded bg-white flex items-center justify-center">
+                      <Calendar className="w-3 h-3 text-primary" />
+                    </div>
                     Schedule Call
                   </Button>
                 </div>
               </form>
             </CardContent>
           </Card>
-          
-          {/* Contact Information */}
-          <div className="space-y-8">
-            <Card className="bg-gradient-hero text-white border-0 shadow-glow">
-              <CardContent className="p-8">
-                <h3 className="text-2xl font-bold mb-4">Why Choose Foster AI?</h3>
-                <ul className="space-y-4 text-white/90">
-                  <li className="flex items-start gap-3">
-                    <div className="w-2 h-2 rounded-full bg-white mt-2 flex-shrink-0"></div>
-                    <span>Custom AI solutions tailored to your healthcare facility</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <div className="w-2 h-2 rounded-full bg-white mt-2 flex-shrink-0"></div>
-                    <span>HIPAA compliant security</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <div className="w-2 h-2 rounded-full bg-white mt-2 flex-shrink-0"></div>
-                    <span>Proven track record with 99% accuracy rates</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <div className="w-2 h-2 rounded-full bg-white mt-2 flex-shrink-0"></div>
-                    <span>24/7 support and dedicated implementation team</span>
-                  </li>
-                </ul>
-              </CardContent>
-            </Card>
-            
-            <div className="grid gap-6">
-              <Card className="bg-white/90 backdrop-blur-sm border-primary/10">
-                <CardContent className="p-6 flex items-center gap-4">
-                  <div className="w-12 h-12 rounded-lg bg-gradient-hero flex items-center justify-center">
-                    <Mail className="w-6 h-6 text-white" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-foreground">Email Us</h4>
-                    <p className="text-muted-foreground">hello@fosterhealthai.com</p>
-                  </div>
-                </CardContent>
-              </Card>
-              
-            </div>
-          </div>
         </div>
       </div>
     </section>

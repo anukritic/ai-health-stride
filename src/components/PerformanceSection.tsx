@@ -29,7 +29,7 @@ const PerformanceSection = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
             Proven Results That{" "}
-            <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+            <span className="text-primary">
               Transform Healthcare
             </span>
           </h2>
@@ -42,16 +42,15 @@ const PerformanceSection = () => {
           {performanceStats.map((item, index) => (
             <Card 
               key={index}
-              className="relative overflow-hidden bg-gradient-card border-border/50 hover:shadow-hover transition-all duration-300 group hover:scale-105"
+              className="relative overflow-hidden bg-card border-border/50 hover:shadow-hover transition-all duration-300 group hover:scale-105"
             >
-              <div className={`absolute inset-0 bg-gradient-to-br ${item.color} opacity-0 group-hover:opacity-5 transition-opacity duration-300`}></div>
               
               <CardContent className="text-center p-8 relative z-10">
-                <div className={`w-20 h-20 rounded-full bg-gradient-to-br ${item.color} flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300`}>
-                  <item.icon className="w-10 h-10 text-white" />
+                <div className="w-20 h-20 rounded-full border-2 border-primary bg-white flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                  <item.icon className="w-10 h-10 text-primary" />
                 </div>
                 
-                <div className="text-5xl md:text-6xl font-bold mb-4 bg-gradient-to-br from-primary to-secondary bg-clip-text text-transparent">
+                <div className="text-5xl md:text-6xl font-bold mb-4 text-primary">
                   {item.stat}
                 </div>
                 

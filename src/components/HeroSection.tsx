@@ -18,7 +18,7 @@ const HeroSection = () => {
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center text-white">
         <h1 className="text-5xl md:text-7xl font-bold mb-8 leading-tight">
           Improve productivity and create{" "}
-          <span className="bg-gradient-to-r from-secondary to-accent bg-clip-text text-transparent">
+          <span className="text-secondary">
             better patient experiences
           </span>{" "}
           with AI
@@ -32,7 +32,7 @@ const HeroSection = () => {
         <div className="flex flex-col sm:flex-row gap-6 justify-center">
           <Button 
             size="lg" 
-            className="bg-white text-primary hover:bg-primary-light hover:text-primary-foreground transition-all duration-300 transform hover:scale-105 shadow-glow"
+            className="bg-white text-primary hover:bg-primary-light hover:text-primary transition-all duration-300 transform hover:scale-105"
           >
             Get Started Today
           </Button>

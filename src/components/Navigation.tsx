@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Stethoscope } from "lucide-react";
+import { Menu, X } from "lucide-react";
+import fosterLogo from "@/assets/foster-logo.png";
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -21,13 +22,11 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-lg bg-gradient-hero flex items-center justify-center">
-              <Stethoscope className="w-6 h-6 text-white" />
-            </div>
-            <div>
-              <span className="text-xl font-bold text-foreground">Foster</span>
-              <span className="text-xl font-light text-primary">AI</span>
-            </div>
+            <img 
+              src={fosterLogo} 
+              alt="Foster Health AI" 
+              className="h-10 w-auto"
+            />
           </div>
 
           {/* Desktop Navigation */}
@@ -50,15 +49,9 @@ const Navigation = () => {
             >
               Performance
             </button>
-            <button 
-              onClick={() => scrollToSection('events')}
-              className="text-muted-foreground hover:text-primary transition-colors duration-200"
-            >
-              Events
-            </button>
             <Button 
               onClick={() => scrollToSection('contact')}
-              className="bg-gradient-hero hover:shadow-hover transition-all duration-300"
+              className="bg-primary text-primary-foreground hover:bg-primary/90"
             >
               Get Started
             </Button>
@@ -99,15 +92,9 @@ const Navigation = () => {
               >
                 Performance
               </button>
-              <button 
-                onClick={() => scrollToSection('events')}
-                className="text-left text-muted-foreground hover:text-primary transition-colors duration-200"
-              >
-                Events
-              </button>
               <Button 
                 onClick={() => scrollToSection('contact')}
-                className="bg-gradient-hero hover:shadow-hover transition-all duration-300 w-fit"
+                className="bg-primary text-primary-foreground hover:bg-primary/90 w-fit"
               >
                 Get Started
               </Button>
