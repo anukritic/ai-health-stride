@@ -6,41 +6,41 @@
 
 @layer base {
   :root {
-    --background: 44 50% 96%;
-    --foreground: 20 20% 15%;
+    --background: 0 0% 100%;
+    --foreground: 215 25% 15%;
 
-    --card: 44 50% 98%;
-    --card-foreground: 20 20% 15%;
+    --card: 0 0% 100%;
+    --card-foreground: 215 25% 15%;
 
-    --popover: 44 50% 98%;
-    --popover-foreground: 20 20% 15%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 25% 15%;
 
-    /* Foster Health AI primary - Teal */
+    /* Foster Health AI primary */
     --primary: 193 57% 38%;
     --primary-foreground: 0 0% 100%;
     --primary-light: 193 57% 85%;
     
     /* Foster Health AI secondary - Warm gold */
     --secondary: 44 95% 57%;
-    --secondary-foreground: 20 20% 15%;
+    --secondary-foreground: 215 25% 15%;
     
     /* Foster Health AI accent - Warm cream */
-    --accent: 44 60% 94%;
-    --accent-foreground: 20 20% 15%;
+    --accent: 44 100% 95%;
+    --accent-foreground: 215 25% 15%;
 
-    --muted: 44 40% 88%;
-    --muted-foreground: 20 15% 45%;
+    --muted: 36 33% 91%;
+    --muted-foreground: 215 16% 47%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 44 30% 85%;
-    --input: 44 30% 85%;
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
     --ring: 193 57% 38%;
 
-    /* Foster Health AI gradients - matching website aesthetic */
+    /* Foster Health AI gradients */
     --gradient-hero: linear-gradient(135deg, hsl(193 57% 38%), hsl(44 95% 57%));
-    --gradient-card: linear-gradient(145deg, hsl(44 50% 98%), hsl(44 60% 94%));
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(44 100% 96%));
     --gradient-accent: linear-gradient(135deg, hsl(193 57% 38%), hsl(44 95% 57%));
 
     /* Foster Health AI shadows */
@@ -72,33 +72,36 @@
   }
 
   .dark {
-    --background: 20 20% 8%;
-    --foreground: 44 50% 95%;
+    --background: 215 28% 8%;
+    --foreground: 210 40% 98%;
 
-    --card: 20 20% 10%;
-    --card-foreground: 44 50% 95%;
+    --card: 215 28% 10%;
+    --card-foreground: 210 40% 98%;
 
-    --popover: 20 20% 10%;
-    --popover-foreground: 44 50% 95%;
+    --popover: 215 28% 10%;
+    --popover-foreground: 210 40% 98%;
 
+    /* Foster Health AI primary in dark mode */
     --primary: 193 57% 48%;
-    --primary-foreground: 20 20% 8%;
+    --primary-foreground: 215 28% 8%;
     --primary-light: 193 57% 75%;
     
+    /* Foster Health AI secondary in dark mode */
     --secondary: 44 95% 67%;
-    --secondary-foreground: 20 20% 8%;
+    --secondary-foreground: 215 28% 8%;
     
-    --accent: 44 60% 85%;
-    --accent-foreground: 20 20% 8%;
+    /* Foster Health AI accent in dark mode */
+    --accent: 44 100% 85%;
+    --accent-foreground: 215 28% 8%;
 
-    --muted: 20 20% 15%;
-    --muted-foreground: 44 30% 65%;
+    --muted: 215 28% 15%;
+    --muted-foreground: 215 20.2% 65.1%;
 
     --destructive: 0 62.8% 50.6%;
-    --destructive-foreground: 44 50% 95%;
+    --destructive-foreground: 210 40% 98%;
 
-    --border: 20 20% 18%;
-    --input: 20 20% 18%;
+    --border: 215 28% 18%;
+    --input: 215 28% 18%;
     --ring: 193 57% 48%;
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
