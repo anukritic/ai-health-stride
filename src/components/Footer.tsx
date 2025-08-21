@@ -11,7 +11,7 @@ const Footer = () => {
               <img 
                 src={fosterLogo} 
                 alt="Foster Health AI" 
-                className="h-10 w-auto brightness-0 invert"
+                className="h-10 w-auto"
               />
             </div>
             <p className="text-white/80 leading-relaxed">

@@ -11,6 +11,7 @@ const ContactSection = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
+    phone: "",
     details: "",
   });
   const { toast } = useToast();
@@ -22,7 +23,7 @@ const ContactSection = () => {
       title: "Message Sent!",
       description: "We'll get back to you within 24 hours.",
     });
-    setFormData({ name: "", email: "", details: "" });
+    setFormData({ name: "", email: "", phone: "", details: "" });
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -91,6 +92,20 @@ const ContactSection = () => {
                   />
                 </div>
                 
+                <div className="space-y-2">
+                  <Label htmlFor="phone" className="text-sm font-medium text-foreground">
+                    Phone Number
+                  </Label>
+                  <Input
+                    id="phone"
+                    name="phone"
+                    type="tel"
+                    value={formData.phone}
+                    onChange={handleChange}
+                    className="border-border/50 focus:border-primary/50 focus:ring-primary/20"
+                    placeholder="+1 (555) 123-4567"
+                  />
+                </div>
                 
                 <div className="space-y-2">
                   <Label htmlFor="details" className="text-sm font-medium text-foreground">
